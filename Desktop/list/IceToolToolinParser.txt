@@ -1,0 +1,1098 @@
+# Generated from IceToolToolinParser.g4 by ANTLR 4.7.1
+from antlr4 import *
+if __name__ is not None and "." in __name__:
+    from .IceToolToolinParser import IceToolToolinParser
+else:
+    from IceToolToolinParser import IceToolToolinParser
+
+# This class defines a complete listener for a parse tree produced by IceToolToolinParser.
+class IceToolToolinParserListener(ParseTreeListener):
+
+    # Enter a parse tree produced by IceToolToolinParser#toolin_statements.
+    def enterToolin_statements(self, ctx:IceToolToolinParser.Toolin_statementsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#toolin_statements.
+    def exitToolin_statements(self, ctx:IceToolToolinParser.Toolin_statementsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#operator_statement.
+    def enterOperator_statement(self, ctx:IceToolToolinParser.Operator_statementContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#operator_statement.
+    def exitOperator_statement(self, ctx:IceToolToolinParser.Operator_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#null_stmt.
+    def enterNull_stmt(self, ctx:IceToolToolinParser.Null_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#null_stmt.
+    def exitNull_stmt(self, ctx:IceToolToolinParser.Null_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#comment_stmt.
+    def enterComment_stmt(self, ctx:IceToolToolinParser.Comment_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#comment_stmt.
+    def exitComment_stmt(self, ctx:IceToolToolinParser.Comment_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#copy_stmt.
+    def enterCopy_stmt(self, ctx:IceToolToolinParser.Copy_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#copy_stmt.
+    def exitCopy_stmt(self, ctx:IceToolToolinParser.Copy_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#copy_ops.
+    def enterCopy_ops(self, ctx:IceToolToolinParser.Copy_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#copy_ops.
+    def exitCopy_ops(self, ctx:IceToolToolinParser.Copy_opsContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#count_stmt.
+    def enterCount_stmt(self, ctx:IceToolToolinParser.Count_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#count_stmt.
+    def exitCount_stmt(self, ctx:IceToolToolinParser.Count_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#count_ops.
+    def enterCount_ops(self, ctx:IceToolToolinParser.Count_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#count_ops.
+    def exitCount_ops(self, ctx:IceToolToolinParser.Count_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#count_opt.
+    def enterCount_opt(self, ctx:IceToolToolinParser.Count_optContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#count_opt.
+    def exitCount_opt(self, ctx:IceToolToolinParser.Count_optContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#datasort_stmt.
+    def enterDatasort_stmt(self, ctx:IceToolToolinParser.Datasort_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#datasort_stmt.
+    def exitDatasort_stmt(self, ctx:IceToolToolinParser.Datasort_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#datasort_ops.
+    def enterDatasort_ops(self, ctx:IceToolToolinParser.Datasort_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#datasort_ops.
+    def exitDatasort_ops(self, ctx:IceToolToolinParser.Datasort_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#defaults_stmt.
+    def enterDefaults_stmt(self, ctx:IceToolToolinParser.Defaults_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#defaults_stmt.
+    def exitDefaults_stmt(self, ctx:IceToolToolinParser.Defaults_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#defaults_ops.
+    def enterDefaults_ops(self, ctx:IceToolToolinParser.Defaults_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#defaults_ops.
+    def exitDefaults_ops(self, ctx:IceToolToolinParser.Defaults_opsContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#display_stmt.
+    def enterDisplay_stmt(self, ctx:IceToolToolinParser.Display_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#display_stmt.
+    def exitDisplay_stmt(self, ctx:IceToolToolinParser.Display_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#display_ops.
+    def enterDisplay_ops(self, ctx:IceToolToolinParser.Display_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#display_ops.
+    def exitDisplay_ops(self, ctx:IceToolToolinParser.Display_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#merge_stmt.
+    def enterMerge_stmt(self, ctx:IceToolToolinParser.Merge_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#merge_stmt.
+    def exitMerge_stmt(self, ctx:IceToolToolinParser.Merge_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#merge_ops.
+    def enterMerge_ops(self, ctx:IceToolToolinParser.Merge_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#merge_ops.
+    def exitMerge_ops(self, ctx:IceToolToolinParser.Merge_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#mode_stmt.
+    def enterMode_stmt(self, ctx:IceToolToolinParser.Mode_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#mode_stmt.
+    def exitMode_stmt(self, ctx:IceToolToolinParser.Mode_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#occur_stmt.
+    def enterOccur_stmt(self, ctx:IceToolToolinParser.Occur_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#occur_stmt.
+    def exitOccur_stmt(self, ctx:IceToolToolinParser.Occur_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#occur_ops.
+    def enterOccur_ops(self, ctx:IceToolToolinParser.Occur_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#occur_ops.
+    def exitOccur_ops(self, ctx:IceToolToolinParser.Occur_opsContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#occur_opt.
+    def enterOccur_opt(self, ctx:IceToolToolinParser.Occur_optContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#occur_opt.
+    def exitOccur_opt(self, ctx:IceToolToolinParser.Occur_optContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#occur_list_op.
+    def enterOccur_list_op(self, ctx:IceToolToolinParser.Occur_list_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#occur_list_op.
+    def exitOccur_list_op(self, ctx:IceToolToolinParser.Occur_list_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#range_stmt.
+    def enterRange_stmt(self, ctx:IceToolToolinParser.Range_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#range_stmt.
+    def exitRange_stmt(self, ctx:IceToolToolinParser.Range_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#range_ops.
+    def enterRange_ops(self, ctx:IceToolToolinParser.Range_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#range_ops.
+    def exitRange_ops(self, ctx:IceToolToolinParser.Range_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#range_opt.
+    def enterRange_opt(self, ctx:IceToolToolinParser.Range_optContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#range_opt.
+    def exitRange_opt(self, ctx:IceToolToolinParser.Range_optContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#resize_stmt.
+    def enterResize_stmt(self, ctx:IceToolToolinParser.Resize_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#resize_stmt.
+    def exitResize_stmt(self, ctx:IceToolToolinParser.Resize_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#resize_ops.
+    def enterResize_ops(self, ctx:IceToolToolinParser.Resize_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#resize_ops.
+    def exitResize_ops(self, ctx:IceToolToolinParser.Resize_opsContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#select_stmt.
+    def enterSelect_stmt(self, ctx:IceToolToolinParser.Select_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#select_stmt.
+    def exitSelect_stmt(self, ctx:IceToolToolinParser.Select_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#select_opt.
+    def enterSelect_opt(self, ctx:IceToolToolinParser.Select_optContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#select_opt.
+    def exitSelect_opt(self, ctx:IceToolToolinParser.Select_optContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#select_fmt.
+    def enterSelect_fmt(self, ctx:IceToolToolinParser.Select_fmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#select_fmt.
+    def exitSelect_fmt(self, ctx:IceToolToolinParser.Select_fmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#sort_stmt.
+    def enterSort_stmt(self, ctx:IceToolToolinParser.Sort_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#sort_stmt.
+    def exitSort_stmt(self, ctx:IceToolToolinParser.Sort_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#sort_ops.
+    def enterSort_ops(self, ctx:IceToolToolinParser.Sort_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#sort_ops.
+    def exitSort_ops(self, ctx:IceToolToolinParser.Sort_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#splice_stmt.
+    def enterSplice_stmt(self, ctx:IceToolToolinParser.Splice_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#splice_stmt.
+    def exitSplice_stmt(self, ctx:IceToolToolinParser.Splice_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#splice_ops.
+    def enterSplice_ops(self, ctx:IceToolToolinParser.Splice_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#splice_ops.
+    def exitSplice_ops(self, ctx:IceToolToolinParser.Splice_opsContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#splice_opts.
+    def enterSplice_opts(self, ctx:IceToolToolinParser.Splice_optsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#splice_opts.
+    def exitSplice_opts(self, ctx:IceToolToolinParser.Splice_optsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#stats_stmt.
+    def enterStats_stmt(self, ctx:IceToolToolinParser.Stats_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#stats_stmt.
+    def exitStats_stmt(self, ctx:IceToolToolinParser.Stats_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#stats_ops.
+    def enterStats_ops(self, ctx:IceToolToolinParser.Stats_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#stats_ops.
+    def exitStats_ops(self, ctx:IceToolToolinParser.Stats_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#subset_stmt.
+    def enterSubset_stmt(self, ctx:IceToolToolinParser.Subset_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#subset_stmt.
+    def exitSubset_stmt(self, ctx:IceToolToolinParser.Subset_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#subset_ops.
+    def enterSubset_ops(self, ctx:IceToolToolinParser.Subset_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#subset_ops.
+    def exitSubset_ops(self, ctx:IceToolToolinParser.Subset_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#subset_opts.
+    def enterSubset_opts(self, ctx:IceToolToolinParser.Subset_optsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#subset_opts.
+    def exitSubset_opts(self, ctx:IceToolToolinParser.Subset_optsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#unique_stmt.
+    def enterUnique_stmt(self, ctx:IceToolToolinParser.Unique_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#unique_stmt.
+    def exitUnique_stmt(self, ctx:IceToolToolinParser.Unique_stmtContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#unique_ops.
+    def enterUnique_ops(self, ctx:IceToolToolinParser.Unique_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#unique_ops.
+    def exitUnique_ops(self, ctx:IceToolToolinParser.Unique_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#verify_stmt.
+    def enterVerify_stmt(self, ctx:IceToolToolinParser.Verify_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#verify_stmt.
+    def exitVerify_stmt(self, ctx:IceToolToolinParser.Verify_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#verify_ops.
+    def enterVerify_ops(self, ctx:IceToolToolinParser.Verify_opsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#verify_ops.
+    def exitVerify_ops(self, ctx:IceToolToolinParser.Verify_opsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#using_op.
+    def enterUsing_op(self, ctx:IceToolToolinParser.Using_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#using_op.
+    def exitUsing_op(self, ctx:IceToolToolinParser.Using_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#list_op.
+    def enterList_op(self, ctx:IceToolToolinParser.List_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#list_op.
+    def exitList_op(self, ctx:IceToolToolinParser.List_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#write_op.
+    def enterWrite_op(self, ctx:IceToolToolinParser.Write_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#write_op.
+    def exitWrite_op(self, ctx:IceToolToolinParser.Write_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#discard_op.
+    def enterDiscard_op(self, ctx:IceToolToolinParser.Discard_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#discard_op.
+    def exitDiscard_op(self, ctx:IceToolToolinParser.Discard_opContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#date_op.
+    def enterDate_op(self, ctx:IceToolToolinParser.Date_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#date_op.
+    def exitDate_op(self, ctx:IceToolToolinParser.Date_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#time_op.
+    def enterTime_op(self, ctx:IceToolToolinParser.Time_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#time_op.
+    def exitTime_op(self, ctx:IceToolToolinParser.Time_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#to_op.
+    def enterTo_op(self, ctx:IceToolToolinParser.To_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#to_op.
+    def exitTo_op(self, ctx:IceToolToolinParser.To_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#to_op_multi.
+    def enterTo_op_multi(self, ctx:IceToolToolinParser.To_op_multiContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#to_op_multi.
+    def exitTo_op_multi(self, ctx:IceToolToolinParser.To_op_multiContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#from_op.
+    def enterFrom_op(self, ctx:IceToolToolinParser.From_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#from_op.
+    def exitFrom_op(self, ctx:IceToolToolinParser.From_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#from_op_multi.
+    def enterFrom_op_multi(self, ctx:IceToolToolinParser.From_op_multiContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#from_op_multi.
+    def exitFrom_op_multi(self, ctx:IceToolToolinParser.From_op_multiContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#total_op.
+    def enterTotal_op(self, ctx:IceToolToolinParser.Total_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#total_op.
+    def exitTotal_op(self, ctx:IceToolToolinParser.Total_opContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#maximum_op.
+    def enterMaximum_op(self, ctx:IceToolToolinParser.Maximum_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#maximum_op.
+    def exitMaximum_op(self, ctx:IceToolToolinParser.Maximum_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#minimum_op.
+    def enterMinimum_op(self, ctx:IceToolToolinParser.Minimum_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#minimum_op.
+    def exitMinimum_op(self, ctx:IceToolToolinParser.Minimum_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#average_op.
+    def enterAverage_op(self, ctx:IceToolToolinParser.Average_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#average_op.
+    def exitAverage_op(self, ctx:IceToolToolinParser.Average_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#count_op.
+    def enterCount_op(self, ctx:IceToolToolinParser.Count_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#count_op.
+    def exitCount_op(self, ctx:IceToolToolinParser.Count_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#btitle_op.
+    def enterBtitle_op(self, ctx:IceToolToolinParser.Btitle_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#btitle_op.
+    def exitBtitle_op(self, ctx:IceToolToolinParser.Btitle_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#btotal_op.
+    def enterBtotal_op(self, ctx:IceToolToolinParser.Btotal_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#btotal_op.
+    def exitBtotal_op(self, ctx:IceToolToolinParser.Btotal_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#bmaximum_op.
+    def enterBmaximum_op(self, ctx:IceToolToolinParser.Bmaximum_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#bmaximum_op.
+    def exitBmaximum_op(self, ctx:IceToolToolinParser.Bmaximum_opContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#bminimum_op.
+    def enterBminimum_op(self, ctx:IceToolToolinParser.Bminimum_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#bminimum_op.
+    def exitBminimum_op(self, ctx:IceToolToolinParser.Bminimum_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#baverage_op.
+    def enterBaverage_op(self, ctx:IceToolToolinParser.Baverage_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#baverage_op.
+    def exitBaverage_op(self, ctx:IceToolToolinParser.Baverage_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#bcount_op.
+    def enterBcount_op(self, ctx:IceToolToolinParser.Bcount_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#bcount_op.
+    def exitBcount_op(self, ctx:IceToolToolinParser.Bcount_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#text_op.
+    def enterText_op(self, ctx:IceToolToolinParser.Text_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#text_op.
+    def exitText_op(self, ctx:IceToolToolinParser.Text_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#limit_op.
+    def enterLimit_op(self, ctx:IceToolToolinParser.Limit_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#limit_op.
+    def exitLimit_op(self, ctx:IceToolToolinParser.Limit_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#indent_op.
+    def enterIndent_op(self, ctx:IceToolToolinParser.Indent_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#indent_op.
+    def exitIndent_op(self, ctx:IceToolToolinParser.Indent_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#lines_op.
+    def enterLines_op(self, ctx:IceToolToolinParser.Lines_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#lines_op.
+    def exitLines_op(self, ctx:IceToolToolinParser.Lines_opContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#width_op.
+    def enterWidth_op(self, ctx:IceToolToolinParser.Width_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#width_op.
+    def exitWidth_op(self, ctx:IceToolToolinParser.Width_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#between_op.
+    def enterBetween_op(self, ctx:IceToolToolinParser.Between_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#between_op.
+    def exitBetween_op(self, ctx:IceToolToolinParser.Between_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#tbetween_op.
+    def enterTbetween_op(self, ctx:IceToolToolinParser.Tbetween_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#tbetween_op.
+    def exitTbetween_op(self, ctx:IceToolToolinParser.Tbetween_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#to_len_op.
+    def enterTo_len_op(self, ctx:IceToolToolinParser.To_len_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#to_len_op.
+    def exitTo_len_op(self, ctx:IceToolToolinParser.To_len_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#on_op.
+    def enterOn_op(self, ctx:IceToolToolinParser.On_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#on_op.
+    def exitOn_op(self, ctx:IceToolToolinParser.On_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#disp_on_op.
+    def enterDisp_on_op(self, ctx:IceToolToolinParser.Disp_on_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#disp_on_op.
+    def exitDisp_on_op(self, ctx:IceToolToolinParser.Disp_on_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#occur_on_op.
+    def enterOccur_on_op(self, ctx:IceToolToolinParser.Occur_on_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#occur_on_op.
+    def exitOccur_on_op(self, ctx:IceToolToolinParser.Occur_on_opContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#vstype_op.
+    def enterVstype_op(self, ctx:IceToolToolinParser.Vstype_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#vstype_op.
+    def exitVstype_op(self, ctx:IceToolToolinParser.Vstype_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#locale_op.
+    def enterLocale_op(self, ctx:IceToolToolinParser.Locale_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#locale_op.
+    def exitLocale_op(self, ctx:IceToolToolinParser.Locale_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#break_op.
+    def enterBreak_op(self, ctx:IceToolToolinParser.Break_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#break_op.
+    def exitBreak_op(self, ctx:IceToolToolinParser.Break_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#edcount_op.
+    def enterEdcount_op(self, ctx:IceToolToolinParser.Edcount_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#edcount_op.
+    def exitEdcount_op(self, ctx:IceToolToolinParser.Edcount_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#edbcount_op.
+    def enterEdbcount_op(self, ctx:IceToolToolinParser.Edbcount_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#edbcount_op.
+    def exitEdbcount_op(self, ctx:IceToolToolinParser.Edbcount_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#title_op.
+    def enterTitle_op(self, ctx:IceToolToolinParser.Title_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#title_op.
+    def exitTitle_op(self, ctx:IceToolToolinParser.Title_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#header_op.
+    def enterHeader_op(self, ctx:IceToolToolinParser.Header_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#header_op.
+    def exitHeader_op(self, ctx:IceToolToolinParser.Header_opContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#header_op_ds.
+    def enterHeader_op_ds(self, ctx:IceToolToolinParser.Header_op_dsContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#header_op_ds.
+    def exitHeader_op_ds(self, ctx:IceToolToolinParser.Header_op_dsContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#trailer_op.
+    def enterTrailer_op(self, ctx:IceToolToolinParser.Trailer_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#trailer_op.
+    def exitTrailer_op(self, ctx:IceToolToolinParser.Trailer_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#collkey_op.
+    def enterCollkey_op(self, ctx:IceToolToolinParser.Collkey_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#collkey_op.
+    def exitCollkey_op(self, ctx:IceToolToolinParser.Collkey_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#l_string.
+    def enterL_string(self, ctx:IceToolToolinParser.L_stringContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#l_string.
+    def exitL_string(self, ctx:IceToolToolinParser.L_stringContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#f_string.
+    def enterF_string(self, ctx:IceToolToolinParser.F_stringContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#f_string.
+    def exitF_string(self, ctx:IceToolToolinParser.F_stringContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#t_string.
+    def enterT_string(self, ctx:IceToolToolinParser.T_stringContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#t_string.
+    def exitT_string(self, ctx:IceToolToolinParser.T_stringContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#e_string.
+    def enterE_string(self, ctx:IceToolToolinParser.E_stringContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#e_string.
+    def exitE_string(self, ctx:IceToolToolinParser.E_stringContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#uzero_op.
+    def enterUzero_op(self, ctx:IceToolToolinParser.Uzero_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#uzero_op.
+    def exitUzero_op(self, ctx:IceToolToolinParser.Uzero_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#serial_op.
+    def enterSerial_op(self, ctx:IceToolToolinParser.Serial_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#serial_op.
+    def exitSerial_op(self, ctx:IceToolToolinParser.Serial_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#jkfrom_op.
+    def enterJkfrom_op(self, ctx:IceToolToolinParser.Jkfrom_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#jkfrom_op.
+    def exitJkfrom_op(self, ctx:IceToolToolinParser.Jkfrom_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#statleft_op.
+    def enterStatleft_op(self, ctx:IceToolToolinParser.Statleft_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#statleft_op.
+    def exitStatleft_op(self, ctx:IceToolToolinParser.Statleft_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#listsdb_op.
+    def enterListsdb_op(self, ctx:IceToolToolinParser.Listsdb_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#listsdb_op.
+    def exitListsdb_op(self, ctx:IceToolToolinParser.Listsdb_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#tleft_op.
+    def enterTleft_op(self, ctx:IceToolToolinParser.Tleft_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#tleft_op.
+    def exitTleft_op(self, ctx:IceToolToolinParser.Tleft_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#tfirst_op.
+    def enterTfirst_op(self, ctx:IceToolToolinParser.Tfirst_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#tfirst_op.
+    def exitTfirst_op(self, ctx:IceToolToolinParser.Tfirst_opContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#page_op.
+    def enterPage_op(self, ctx:IceToolToolinParser.Page_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#page_op.
+    def exitPage_op(self, ctx:IceToolToolinParser.Page_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#nocc_op.
+    def enterNocc_op(self, ctx:IceToolToolinParser.Nocc_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#nocc_op.
+    def exitNocc_op(self, ctx:IceToolToolinParser.Nocc_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#longline_op.
+    def enterLongline_op(self, ctx:IceToolToolinParser.Longline_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#longline_op.
+    def exitLongline_op(self, ctx:IceToolToolinParser.Longline_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#nosign_op.
+    def enterNosign_op(self, ctx:IceToolToolinParser.Nosign_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#nosign_op.
+    def exitNosign_op(self, ctx:IceToolToolinParser.Nosign_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#n_dd.
+    def enterN_dd(self, ctx:IceToolToolinParser.N_ddContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#n_dd.
+    def exitN_dd(self, ctx:IceToolToolinParser.N_ddContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#u_dd.
+    def enterU_dd(self, ctx:IceToolToolinParser.U_ddContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#u_dd.
+    def exitU_dd(self, ctx:IceToolToolinParser.U_ddContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#slash_x.
+    def enterSlash_x(self, ctx:IceToolToolinParser.Slash_xContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#slash_x.
+    def exitSlash_x(self, ctx:IceToolToolinParser.Slash_xContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#vsam_code.
+    def enterVsam_code(self, ctx:IceToolToolinParser.Vsam_codeContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#vsam_code.
+    def exitVsam_code(self, ctx:IceToolToolinParser.Vsam_codeContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#collkey_type.
+    def enterCollkey_type(self, ctx:IceToolToolinParser.Collkey_typeContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#collkey_type.
+    def exitCollkey_type(self, ctx:IceToolToolinParser.Collkey_typeContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#rc_op.
+    def enterRc_op(self, ctx:IceToolToolinParser.Rc_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#rc_op.
+    def exitRc_op(self, ctx:IceToolToolinParser.Rc_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#blank_plus_op.
+    def enterBlank_plus_op(self, ctx:IceToolToolinParser.Blank_plus_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#blank_plus_op.
+    def exitBlank_plus_op(self, ctx:IceToolToolinParser.Blank_plus_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#formatting.
+    def enterFormatting(self, ctx:IceToolToolinParser.FormattingContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#formatting.
+    def exitFormatting(self, ctx:IceToolToolinParser.FormattingContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#formatt.
+    def enterFormatt(self, ctx:IceToolToolinParser.FormattContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#formatt.
+    def exitFormatt(self, ctx:IceToolToolinParser.FormattContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#with_op.
+    def enterWith_op(self, ctx:IceToolToolinParser.With_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#with_op.
+    def exitWith_op(self, ctx:IceToolToolinParser.With_opContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#rrn_op.
+    def enterRrn_op(self, ctx:IceToolToolinParser.Rrn_opContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#rrn_op.
+    def exitRrn_op(self, ctx:IceToolToolinParser.Rrn_opContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#ucannn_l_r_v.
+    def enterUcannn_l_r_v(self, ctx:IceToolToolinParser.Ucannn_l_r_vContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#ucannn_l_r_v.
+    def exitUcannn_l_r_v(self, ctx:IceToolToolinParser.Ucannn_l_r_vContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#name.
+    def enterName(self, ctx:IceToolToolinParser.NameContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#name.
+    def exitName(self, ctx:IceToolToolinParser.NameContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#start_pos.
+    def enterStart_pos(self, ctx:IceToolToolinParser.Start_posContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#start_pos.
+    def exitStart_pos(self, ctx:IceToolToolinParser.Start_posContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#length.
+    def enterLength(self, ctx:IceToolToolinParser.LengthContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#length.
+    def exitLength(self, ctx:IceToolToolinParser.LengthContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#record_num.
+    def enterRecord_num(self, ctx:IceToolToolinParser.Record_numContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#record_num.
+    def exitRecord_num(self, ctx:IceToolToolinParser.Record_numContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#integer.
+    def enterInteger(self, ctx:IceToolToolinParser.IntegerContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#integer.
+    def exitInteger(self, ctx:IceToolToolinParser.IntegerContext):
+        pass
+		
+	# Enter a parse tree produced by IceToolToolinParser#qstring.
+    def enterQstring(self, ctx:IceToolToolinParser.QstringContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#qstring.
+    def exitQstring(self, ctx:IceToolToolinParser.QstringContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#ddname_token.
+    def enterDdname_token(self, ctx:IceToolToolinParser.Ddname_tokenContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#ddname_token.
+    def exitDdname_token(self, ctx:IceToolToolinParser.Ddname_tokenContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#ddname_tokens.
+    def enterDdname_tokens(self, ctx:IceToolToolinParser.Ddname_tokensContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#ddname_tokens.
+    def exitDdname_tokens(self, ctx:IceToolToolinParser.Ddname_tokensContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#ptoken.
+    def enterPtoken(self, ctx:IceToolToolinParser.PtokenContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#ptoken.
+    def exitPtoken(self, ctx:IceToolToolinParser.PtokenContext):
+        pass
+
+
+    # Enter a parse tree produced by IceToolToolinParser#comma.
+    def enterComma(self, ctx:IceToolToolinParser.CommaContext):
+        pass
+
+    # Exit a parse tree produced by IceToolToolinParser#comma.
+    def exitComma(self, ctx:IceToolToolinParser.CommaContext):
+        pass
