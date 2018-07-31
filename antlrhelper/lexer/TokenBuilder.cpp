@@ -1,10 +1,9 @@
 //
 //  TokenBuilder.cpp
-//  MULR
+//  ANTLR helper
 //
 //  Created by David Edwards on 7/15/18.
-//  Copyright © 2018 David Edwards. All rights reserved.
-//
+// Open Source Software
 
 #include "TokenBuilder.hpp"
 
