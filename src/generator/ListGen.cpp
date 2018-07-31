@@ -17,7 +17,7 @@ void ListGen::createFile(string arg) {
             //while (tokens.at(++j)->type != ID);
                         funcName = tokens.at(i+2)->literal_text;
             while (tokens.at(++i)->literal_text != "pass");
-            tokens.at(i)->literal_text = "if self._eventTraceEnabled is 1:\n\t\t\tself._log.write(\"listener ... "+funcName+"\")\n\t\tpass";
+            tokens.at(i)->literal_text = "if self._eventTraceEnabled is 1:\n\t\t\tself._log.write(\"listener ... "+funcName+"\\n\")\n\t\tpass";
         } else if (tokens.at(i)->literal_text == "class") {
                         while (tokens.at(++i)->type != COLON);
                         if (tokens.at(i+1)->type == ID) {
