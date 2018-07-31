@@ -1,10 +1,9 @@
 //
 //  TokenGenerator.hpp
-//  MULR
+//  ANTLR helper
 //
-//  Created by David Edwards on 7/14/18.
-//  Copyright © 2018 David Edwards. All rights reserved.
-//
+//  Created by David Edwards
+//  Open Source Software
 
 #ifndef TokenGenerator_hpp
 #define TokenGenerator_hpp
