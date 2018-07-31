@@ -1,6 +1,6 @@
 //
 //  MULRLexer.cpp
-//  MULR
+//  ANTLR helper
 //
 //  Created by David Edwards
 //  Open Source Software
