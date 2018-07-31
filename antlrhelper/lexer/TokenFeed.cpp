@@ -1,10 +1,9 @@
 //
 //  TokenFeed.cpp
-//  MULR
+//  ANTLR helper
 //
-//  Created by David Edwards on 7/18/18.
-//  Copyright © 2018 David Edwards. All rights reserved.
-//
+//  Created by David Edwards
+//  Open Source Software
 
 #include "TokenFeed.hpp"
 using namespace std;
