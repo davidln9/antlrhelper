@@ -1,11 +1,6 @@
-//
-//  ListGen.hpp
-//  listP
-//
-//  Created by David Edwards on 7/27/18.
-//  Copyright © 2018 David Edwards. All rights reserved.
-//
-
+/**
+ * Open Source Software
+ */
 #ifndef ListGen_hpp
 #define ListGen_hpp
 
@@ -18,8 +13,7 @@ private:
     std::vector<Token*> tokens;
 public:
     ListGen(std::vector<Token*> tokens);
-    void createFile();
+    void createFile(std::string arg);
 };
 
 #endif /* ListGen_hpp */
-
