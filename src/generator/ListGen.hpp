@@ -13,7 +13,7 @@ private:
     std::vector<Token*> tokens;
 public:
     ListGen(std::vector<Token*> tokens);
-    void createFile(std::string arg);
+    void createFile(std::string arg, std::vector<std::string> statements);
 };
 
 #endif /* ListGen_hpp */

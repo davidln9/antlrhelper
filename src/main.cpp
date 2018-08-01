@@ -12,16 +12,21 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     ifstream grammar;
+    vector<string> statements;
+    int cmdOption = 0;
     bool parse;
     if (argc < 2) {
         cerr<<"Error: Missing input file"<<endl;
         exit(1);
-    } else if (argc == 2) {
+    } else {
 //        cout<<argv[1];
         grammar.open(argv[1]);
         if (!grammar) {
             cerr<<"Input file does not exist"<<endl;
             exit(1);
+        }
+        for (int i = 2; i < argc; i++) {
+            statements.push_back(argv[i]);
         }
     }
 
@@ -35,7 +40,7 @@ int main(int argc, const char * argv[]) {
     ret[len] = '1';
     ret[len+1] = '\0';
     ListGen * g = new ListGen(tokens);
-    g->createFile(ret);
+    g->createFile(ret, statements);
     //cout<<len<<endl;
     len*=2;
     len+=5;
