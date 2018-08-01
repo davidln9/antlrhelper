@@ -6,41 +6,71 @@
 #include <fstream>
 #include "MULRLexer.hpp"
 #include "ListGen.hpp"
-#include <cstring>
+#include <string>
 using namespace std;
 
 
 int main(int argc, const char * argv[]) {
     ifstream grammar;
     vector<string> statements;
+	string enterStatements="";
+	string exitStatements="";
     int cmdOption = 0;
-    bool parse;
+	int fileLoc = 1;
+    bool debug = false;
     if (argc < 2) {
         cerr<<"Error: Missing input file"<<endl;
         exit(1);
+    } else if (argc > 3) {
+		bool hasInputFile = false;
+        for (int i = 0; i < argc; i++) {
+        	if (argv[i][0] == '-') {
+        		if (strcmp(argv[i], "-i") == 0) {
+					hasInputFile = true;
+					grammar.open(argv[++i]);
+					fileLoc = i;
+					if (!grammar) {
+						cerr<<"Input file does not exist"<<endl;
+						exit(1);
+					}
+				} else if (strcmp(argv[i], "--enter") == 0) {
+					enterStatements = argv[++i];
+				} else if (strcmp(argv[i], "--exit") == 0) {
+					exitStatements = argv[++i];
+				} else if (strcmp(argv[i], "--both") == 0) {
+					enterStatements = argv[++i];
+					exitStatements = enterStatements;
+				} else if (strcmp(argv[i], "--debug") == 0) {
+					debug = true;
+				} else {
+					cerr<<"Unknown option "<<argv[i]<<endl;
+					exit(1);
+				}
+        	}
+        }
+		if (!hasInputFile) {
+			cerr<<"Missing Input File"<<endl;
+			exit(1);
+		}
     } else {
-//        cout<<argv[1];
-        grammar.open(argv[1]);
-        if (!grammar) {
-            cerr<<"Input file does not exist"<<endl;
-            exit(1);
-        }
-        for (int i = 2; i < argc; i++) {
-            statements.push_back(argv[i]);
-        }
+    	grammar.open(argv[1]);
+		if (!grammar) {
+			cerr<<"Input file does not exist"<<endl;
+			exit(1);
+		}
     }
 
 
     MULRLexer * lexer = new MULRLexer(grammar);
     vector<Token*> tokens = lexer->getTokens();
     grammar.close();
-    size_t len = strlen(argv[1]);
+    size_t len = strlen(argv[fileLoc]);
     char * ret = new char[len+2];
-    strcpy(ret, argv[1]);
+    strcpy(ret, argv[fileLoc]);
     ret[len] = '1';
     ret[len+1] = '\0';
     ListGen * g = new ListGen(tokens);
-    g->createFile(ret, statements);
+    g->createFile(ret, enterStatements, exitStatements, debug);
     //cout<<len<<endl;
     len*=2;
     len+=5;
@@ -56,10 +86,11 @@ int main(int argc, const char * argv[]) {
         cmd[i+3] = ret[i];
     }
     cmd[3+strlen(ret)] = ' ';
-    for (size_t i = 0; i < strlen(argv[1]); i++) {
-        cmd[i+4+strlen(ret)] = argv[1][i];
+    for (size_t i = 0; i < strlen(argv[fileLoc]); i++) {
+        cmd[i+4+strlen(ret)] = argv[fileLoc][i];
     }
-    cmd[4+strlen(ret)+strlen(argv[1])] = '\0';
+    cmd[4+strlen(ret)+strlen(argv[fileLoc])] = '\0';
+	cout<<cmd<<endl;
     system(cmd);
     delete[] cmd;
     delete[] ret;

@@ -7,7 +7,7 @@ ListGen::ListGen(vector<Token*> tokens) {
     this->tokens = tokens;
 }
 
-void ListGen::createFile(string arg, vector<string> statements) {
+void ListGen::createFile(string arg, string enterStatements, string exitStatements, bool debug) {
     ofstream fileOut;
     fileOut.open(arg);
     size_t j = 0;
@@ -16,11 +16,28 @@ void ListGen::createFile(string arg, vector<string> statements) {
         if (tokens.at(i)->literal_text == "def") {
             //while (tokens.at(++j)->type != ID);
             funcName = tokens.at(i+2)->literal_text;
-            while (tokens.at(++i)->literal_text != "pass");
-            tokens.at(i)->literal_text = "if self._eventTraceEnabled is 1:\n\t\t\tself._log.write(\"listener ... "+funcName+"\\n\")\n\t\t";
-			for (size_t x = 0; x < statements.size(); x++) {
-            	tokens.at(i)->literal_text += statements.at(x)+"\n\t\t";
+			if (funcName[1] == 'n') {
+	            while (tokens.at(++i)->literal_text != "pass");
+				if (debug) {
+	            	tokens.at(i)->literal_text = "if self._eventTraceEnabled is 1:\n\t\t\tself._log.write(\"listener ... "+funcName+"\\n\")\n\t\t";
+				}
+				if (enterStatements != "" && debug) {
+	            	tokens.at(i)->literal_text += enterStatements;
+				} else if (enterStatements != "") {
+					tokens.at(i)->literal_text = enterStatements;
+				}
+			} else {
+				while (tokens.at(++i)->literal_text != "pass");
+				if (debug) {
+					tokens.at(i)->literal_text = "if self._eventTraceEnabled is 1:\n\t\t\tself._log.write(\"listener ... "+funcName+"\\n\")\n\t\t";
+				}
+				if (exitStatements != "" && debug) {
+					tokens.at(i)->literal_text += exitStatements;
+				} else if (exitStatements != "") {
+					tokens.at(i)->literal_text = exitStatements;
+				}
 			}
+            
 		} else if (tokens.at(i)->literal_text == "class") {
             while (tokens.at(++i)->type != COLON);
             if (tokens.at(i+1)->type == ID) {
