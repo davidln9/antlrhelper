@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include "TokenFeed.hpp"
 #include <vector>
+#include <cstring>
 
 class ListGen {
 private:
