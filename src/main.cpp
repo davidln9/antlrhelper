@@ -90,7 +90,6 @@ int main(int argc, const char * argv[]) {
         cmd[i+4+strlen(ret)] = argv[fileLoc][i];
     }
     cmd[4+strlen(ret)+strlen(argv[fileLoc])] = '\0';
-	cout<<cmd<<endl;
     system(cmd);
     delete[] cmd;
     delete[] ret;
