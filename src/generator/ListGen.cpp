@@ -7,7 +7,7 @@ ListGen::ListGen(vector<Token*> tokens) {
     this->tokens = tokens;
 }
 
-void ListGen::createFile(string arg, string enterStatements, string exitStatements, bool debug) {
+void ListGen::createFile(string arg, vector<string> enterStatements, vector<string> exitStatements, bool debug) {
     ofstream fileOut;
     fileOut.open(arg);
     size_t j = 0;
@@ -21,20 +21,31 @@ void ListGen::createFile(string arg, string enterStatements, string exitStatemen
 				if (debug) {
 	            	tokens.at(i)->literal_text = "if self._eventTraceEnabled is 1:\n\t\t\tself._log.write(\"listener ... "+funcName+"\\n\")\n\t\t";
 				}
-				if (enterStatements != "" && debug) {
-	            	tokens.at(i)->literal_text += enterStatements;
-				} else if (enterStatements != "") {
-					tokens.at(i)->literal_text = enterStatements;
+				if (enterStatements.size() > 0 && debug) {
+					for (size_t y = 0; y < enterStatements.size(); y++) {
+						tokens.at(i)->literal_text += enterStatements.at(y);
+					}
+	            	
+				} else if (enterStatements.size() > 0) {
+					tokens.at(i)->literal_text = enterStatements.at(0);
+					for (size_t y = 1; y < enterStatements.size(); y++) {
+						tokens.at(i)->literal_text += enterStatements.at(y);
+					}
 				}
 			} else {
 				while (tokens.at(++i)->literal_text != "pass");
 				if (debug) {
 					tokens.at(i)->literal_text = "if self._eventTraceEnabled is 1:\n\t\t\tself._log.write(\"listener ... "+funcName+"\\n\")\n\t\t";
 				}
-				if (exitStatements != "" && debug) {
-					tokens.at(i)->literal_text += exitStatements;
-				} else if (exitStatements != "") {
-					tokens.at(i)->literal_text = exitStatements;
+				if (exitStatements.size() > 0 && debug) {
+					for (size_t y = 0; y < exitStatements.size(); y++) {
+						tokens.at(i)->literal_text += exitStatements.at(y);
+					}
+				} else if (exitStatements.size() > 0) {
+					tokens.at(i)->literal_text = exitStatements.at(0);
+					for (size_t y = 1; y < exitStatements.size(); y++) {
+						tokens.at(i)->literal_text += exitStatements.at(y);
+					}
 				}
 			}
             
